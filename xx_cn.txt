@@ -1,0 +1,24 @@
+use a 灰色 背景
+#斧头 = plt.坐标轴(axisbg='#E6E6E6')
+斧头 = plt.坐标轴(facecolor='#E6E6E6')
+
+
+斧头.设置_axisbelow(True)
+
+# 翻牌 原色 白色 网格 台词
+plt.网格(颜色='w', linestyle='原色')
+
+# 隐藏 axis 脊柱( spine的复数形式 )
+for 背骨 in 斧头.脊柱( spine的复数形式 ).对价值的看法():
+    背骨.设置_visible(False)
+    
+# 隐藏 TOP协议 and 右 十字叉
+斧头.xaxis.滴答声_底部()
+斧头.yaxis.滴答声_左边的()
+
+# 照亮 十字叉 and 标签
+斧头.滴答声_params(国旗='灰色', 方向='外面的')
+for 滴答声 in 斧头.取得指令_xticklabels():
+    滴答声.设置_颜色('灰色')
+for 滴答声 in 斧头.取得指令_yticklabels():
+    滴答声.设置_颜色('灰色')
